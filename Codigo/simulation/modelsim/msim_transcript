@@ -10,59 +10,47 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v}
+# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:32:46 on May 09,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v 
-# -- Compiling module rawImage_mem
+# Start time: 22:51:39 on May 09,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv 
+# -- Compiling module setFinalImageData
 # 
 # Top level modules:
-# 	rawImage_mem
-# End time: 21:32:46 on May 09,2022, Elapsed time: 0:00:00
+# 	setFinalImageData
+# End time: 22:51:39 on May 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv}
+# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:32:48 on May 09,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv 
-# -- Compiling module getRawImageData
+# Start time: 22:51:39 on May 09,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv 
+# -- Compiling module tb_setFinalImageData
 # 
 # Top level modules:
-# 	getRawImageData
-# End time: 21:32:48 on May 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:32:48 on May 09,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv 
-# -- Compiling module tb_getRawImageData
-# 
-# Top level modules:
-# 	tb_getRawImageData
-# End time: 21:32:48 on May 09,2022, Elapsed time: 0:00:00
+# 	tb_setFinalImageData
+# End time: 22:51:39 on May 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim -gui -l msim_transcript work.tb_getRawImageData -Lf altera_mf_ver
-# vsim -gui -l msim_transcript work.tb_getRawImageData -Lf altera_mf_ver 
-# Start time: 21:33:00 on May 09,2022
+vsim work.tb_setFinalImageData
+# vsim work.tb_setFinalImageData 
+# Start time: 22:51:49 on May 09,2022
 # Loading sv_std.std
-# Loading work.tb_getRawImageData
-# Loading work.getRawImageData
-# Loading work.rawImage_mem
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (8) for port 'q'. The port definition is at: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v(43).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_getRawImageData/UUT/ROM File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv Line: 6
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (18) for port 'q_a'. The port definition is at: $MODEL_TECH/../altera/verilog/src/altera_mf.v(47613).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_getRawImageData/UUT/ROM/altsyncram_component File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 59
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (18) for port 'data_a'. The port definition is at: $MODEL_TECH/../altera/verilog/src/altera_mf.v(47597).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_getRawImageData/UUT/ROM/altsyncram_component File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 59
+# Loading work.tb_setFinalImageData
+# Loading work.setFinalImageData
+vsim work.tb_setFinalImageData
+# End time: 22:51:53 on May 09,2022, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# vsim work.tb_setFinalImageData 
+# Start time: 22:51:53 on May 09,2022
+# Loading sv_std.std
+# Loading work.tb_setFinalImageData
+# Loading work.setFinalImageData
 add wave -position insertpoint  \
-sim:/tb_getRawImageData/a \
-sim:/tb_getRawImageData/d \
-sim:/tb_getRawImageData/clk
+sim:/tb_setFinalImageData/clk \
+sim:/tb_setFinalImageData/we \
+sim:/tb_setFinalImageData/a \
+sim:/tb_setFinalImageData/wd
 run 20
-# getRawImageData TB...
-# End time: 21:33:55 on May 09,2022, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 3
+# setFinalImageData TB...
+# End time: 22:52:15 on May 09,2022, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0

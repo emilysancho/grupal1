@@ -1,5 +1,5 @@
 Analysis & Elaboration report for processor
-Mon May 09 21:32:38 2022
+Mon May 09 22:51:31 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,13 +9,8 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Source assignments for getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component|altsyncram_oqf1:auto_generated
-  5. Parameter Settings for User Entity Instance: getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component
-  6. altsyncram Parameter Settings by Entity Instance
-  7. Analysis & Elaboration Settings
-  8. Port Connectivity Checks: "getRawImageData:UUT|rawImage_mem:ROM"
-  9. Port Connectivity Checks: "getRawImageData:UUT"
- 10. Analysis & Elaboration Messages
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -42,10 +37,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon May 09 21:32:38 2022       ;
+; Analysis & Elaboration Status ; Successful - Mon May 09 22:51:31 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; processor                                   ;
-; Top-level Entity Name         ; tb_getRawImageData                          ;
+; Top-level Entity Name         ; tb_setFinalImageData                        ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -73,199 +68,91 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component|altsyncram_oqf1:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                           ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                            ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                  ;
-+------------------------------------+----------------------+-------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                               ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                            ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                          ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                          ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                        ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                               ;
-; OPERATION_MODE                     ; ROM                  ; Untyped                                               ;
-; WIDTH_A                            ; 8                    ; Signed Integer                                        ;
-; WIDTHAD_A                          ; 18                   ; Signed Integer                                        ;
-; NUMWORDS_A                         ; 160000               ; Signed Integer                                        ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                               ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                               ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                               ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                               ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                               ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                               ;
-; WIDTH_B                            ; 1                    ; Untyped                                               ;
-; WIDTHAD_B                          ; 1                    ; Untyped                                               ;
-; NUMWORDS_B                         ; 1                    ; Untyped                                               ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                               ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                               ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                               ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                               ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                               ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                               ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                               ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                               ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                               ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                               ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                               ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                               ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                        ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                               ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                               ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                               ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                               ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                               ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                               ;
-; INIT_FILE                          ; rawImage.mif         ; Untyped                                               ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                               ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                               ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                               ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                               ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                               ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                               ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                               ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                               ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                               ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                               ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                               ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                               ;
-; CBXI_PARAMETER                     ; altsyncram_oqf1      ; Untyped                                               ;
-+------------------------------------+----------------------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                 ;
-+-------------------------------------------+----------------------------------------------------------------------+
-; Name                                      ; Value                                                                ;
-+-------------------------------------------+----------------------------------------------------------------------+
-; Number of entity instances                ; 1                                                                    ;
-; Entity Instance                           ; getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                                                  ;
-;     -- WIDTH_A                            ; 8                                                                    ;
-;     -- NUMWORDS_A                         ; 160000                                                               ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                                               ;
-;     -- WIDTH_B                            ; 1                                                                    ;
-;     -- NUMWORDS_B                         ; 1                                                                    ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                               ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                         ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                 ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                            ;
-+-------------------------------------------+----------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; tb_getRawImageData ; processor          ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "getRawImageData:UUT|rawImage_mem:ROM"                                                                                  ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; q    ; Output ; Warning  ; Output or bidir port (18 bits) is wider than the port expression (8 bits) it drives; bit(s) "q[17..8]" have no fanouts ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "getRawImageData:UUT"                                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; data ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                             ;
++---------------------------------------------------------------------------------+----------------------+--------------------+
+; Option                                                                          ; Setting              ; Default Value      ;
++---------------------------------------------------------------------------------+----------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6         ;                    ;
+; Top-level entity name                                                           ; tb_setFinalImageData ; processor          ;
+; Family name                                                                     ; Cyclone V            ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                  ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                   ; On                 ;
+; Enable compact report table                                                     ; Off                  ; Off                ;
+; Restructure Multiplexers                                                        ; Auto                 ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                  ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                  ; Off                ;
+; Preserve fewer node names                                                       ; On                   ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable               ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001         ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993            ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto                 ; Auto               ;
+; Safe State Machine                                                              ; Off                  ; Off                ;
+; Extract Verilog State Machines                                                  ; On                   ; On                 ;
+; Extract VHDL State Machines                                                     ; On                   ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                  ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000                 ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                  ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                   ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                   ; On                 ;
+; Parallel Synthesis                                                              ; On                   ; On                 ;
+; DSP Block Balancing                                                             ; Auto                 ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                   ; On                 ;
+; Power-Up Don't Care                                                             ; On                   ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                  ; Off                ;
+; Remove Duplicate Registers                                                      ; On                   ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                  ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                  ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                  ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                  ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                  ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                   ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                  ; Off                ;
+; Optimization Technique                                                          ; Balanced             ; Balanced           ;
+; Carry Chain Length                                                              ; 70                   ; 70                 ;
+; Auto Carry Chains                                                               ; On                   ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                   ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                  ; Off                ;
+; Auto ROM Replacement                                                            ; On                   ; On                 ;
+; Auto RAM Replacement                                                            ; On                   ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                   ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto                 ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                 ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                   ; On                 ;
+; Strict RAM Replacement                                                          ; Off                  ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                   ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                  ; Off                ;
+; Auto Resource Sharing                                                           ; Off                  ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                  ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                  ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                  ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                   ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                  ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                   ; On                 ;
+; Report Parameter Settings                                                       ; On                   ; On                 ;
+; Report Source Assignments                                                       ; On                   ; On                 ;
+; Report Connectivity Checks                                                      ; On                   ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                  ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                    ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation   ; Normal compilation ;
+; HDL message level                                                               ; Level2               ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                  ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                 ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                 ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                  ; 100                ;
+; Clock MUX Protection                                                            ; On                   ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                  ; Off                ;
+; Block Design Naming                                                             ; Auto                 ; Auto               ;
+; SDC constraint protection                                                       ; Off                  ; Off                ;
+; Synthesis Effort                                                                ; Auto                 ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                   ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                  ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium               ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                 ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                   ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                   ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                  ; Off                ;
++---------------------------------------------------------------------------------+----------------------+--------------------+
 
 
 +---------------------------------+
@@ -274,65 +161,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon May 09 21:32:30 2022
+    Info: Processing started: Mon May 09 22:51:24 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file input-output/setfinalimagedata.sv
+    Info (12023): Found entity 1: setFinalImageData File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file input-output/tb_setfinalimagedata.sv
+    Info (12023): Found entity 1: tb_setFinalImageData File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file input-output/rawimage_mem.v
     Info (12023): Found entity 1: rawImage_mem File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 40
-Info (12021): Found 0 design units, including 0 entities, in source file input-output/tb_instruction_memory.sv
-Info (12021): Found 1 design units, including 1 entities, in source file input-output/instruction_memory.sv
-    Info (12023): Found entity 1: instruction_memory File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/instruction_memory.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file input-output/instr_mem.v
-    Info (12023): Found entity 1: instr_mem File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/instr_mem.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file execution/tb_alu.sv
-    Info (12023): Found entity 1: tb_alu File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/tb_alu.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file execution/alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/alu.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file input-output/getrawimagedata.sv
     Info (12023): Found entity 1: getRawImageData File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file input-output/tb_getrawimagedata.sv
-    Info (12023): Found entity 1: tb_getRawImageData File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv Line: 4
-Info (12127): Elaborating entity "tb_getRawImageData" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at tb_getRawImageData.sv(13): getRawImageData TB... File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv Line: 13
-Warning (10855): Verilog HDL warning at tb_getRawImageData.sv(12): initial value for variable clk should be constant File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv Line: 12
-Info (12128): Elaborating entity "getRawImageData" for hierarchy "getRawImageData:UUT" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv Line: 10
-Info (12128): Elaborating entity "rawImage_mem" for hierarchy "getRawImageData:UUT|rawImage_mem:ROM" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv Line: 6
-Critical Warning (10169): Verilog HDL warning at rawImage_mem.v(47): the port and data declarations for array port "q" do not specify the same range for each dimension File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 47
-Warning (10359): HDL warning at rawImage_mem.v(57): see declaration for object "q" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 57
-Info (12128): Elaborating entity "altsyncram" for hierarchy "getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 82
-Info (12130): Elaborated megafunction instantiation "getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 82
-Info (12133): Instantiated megafunction "getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 82
-    Info (12134): Parameter "address_aclr_a" = "NONE"
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "rawImage.mif"
-    Info (12134): Parameter "intended_device_family" = "Cyclone V"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "160000"
-    Info (12134): Parameter "operation_mode" = "ROM"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
-    Info (12134): Parameter "widthad_a" = "18"
-    Info (12134): Parameter "width_a" = "8"
-    Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oqf1.tdf
-    Info (12023): Found entity 1: altsyncram_oqf1 File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/db/altsyncram_oqf1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_oqf1" for hierarchy "getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component|altsyncram_oqf1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12021): Found 1 design units, including 1 entities, in source file db/decode_i2a.tdf
-    Info (12023): Found entity 1: decode_i2a File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/db/decode_i2a.tdf Line: 23
-Info (12128): Elaborating entity "decode_i2a" for hierarchy "getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component|altsyncram_oqf1:auto_generated|decode_i2a:rden_decode" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/db/altsyncram_oqf1.tdf Line: 41
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9hb.tdf
-    Info (12023): Found entity 1: mux_9hb File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/db/mux_9hb.tdf Line: 23
-Info (12128): Elaborating entity "mux_9hb" for hierarchy "getRawImageData:UUT|rawImage_mem:ROM|altsyncram:altsyncram_component|altsyncram_oqf1:auto_generated|mux_9hb:mux2" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/db/altsyncram_oqf1.tdf Line: 42
-Warning (12020): Port "data_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 18. The formal width of the signal in the module is 8.  The extra bits will be ignored. File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 82
-Warning (12030): Port "q_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 18. The formal width of the signal in the module is 8.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v Line: 82
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+    Info (12023): Found entity 1: tb_getRawImageData File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv Line: 5
+Info (12127): Elaborating entity "tb_setFinalImageData" for the top level hierarchy
+Warning (10755): Verilog HDL warning at tb_setFinalImageData.sv(8): assignments to clk create a combinational loop File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv Line: 8
+Info (10648): Verilog HDL Display System Task info at tb_setFinalImageData.sv(11): setFinalImageData TB... File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv Line: 11
+Info (12128): Elaborating entity "setFinalImageData" for hierarchy "setFinalImageData:UUT" File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv Line: 6
+Warning (10036): Verilog HDL or VHDL warning at setFinalImageData.sv(14): object "memory" assigned a value but never read File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv Line: 14
+Warning (10175): Verilog HDL warning at setFinalImageData.sv(20): ignoring unsupported system task File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv Line: 20
+Warning (12158): Entity "setFinalImageData" contains only dangling pins File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv Line: 6
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv Line: 2
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Mon May 09 21:32:38 2022
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Mon May 09 22:51:31 2022
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:18
 
 
