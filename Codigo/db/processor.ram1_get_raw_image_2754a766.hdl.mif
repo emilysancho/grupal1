@@ -1,0 +1,44 @@
+-- begin_signature
+-- get_raw_image(WIDTH
+-- 4)
+-- end_signature
+WIDTH=4;
+DEPTH=32;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	31 :	XXXX;
+	30 :	XXXX;
+	29 :	XXXX;
+	28 :	XXXX;
+	27 :	XXXX;
+	26 :	XXXX;
+	25 :	XXXX;
+	24 :	XXXX;
+	23 :	XXXX;
+	22 :	XXXX;
+	21 :	XXXX;
+	20 :	XXXX;
+	19 :	XXXX;
+	18 :	XXXX;
+	17 :	XXXX;
+	16 :	XXXX;
+	15 :	XXXX;
+	14 :	XXXX;
+	13 :	XXXX;
+	12 :	XXXX;
+	11 :	XXXX;
+	10 :	XXXX;
+	9 :	XXXX;
+	8 :	XXXX;
+	7 :	XXXX;
+	6 :	XXXX;
+	5 :	XXXX;
+	4 :	XXXX;
+	3 :	XXXX;
+	2 :	XXXX;
+	1 :	XXXX;
+	0 :	1010;
+END;
