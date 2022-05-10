@@ -9,55 +9,82 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/simulation/modelsim
-valu
+vgetRawImageData
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1649978424
+Z2 !s110 1652153568
 !i10b 1
-!s100 1k;T5O6_KHj_PMc4AQZoK3
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IM_HU]XXNm@Cfi_7CkaQFb1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 JXj_3U:Gc[]RPAZVM4<_>1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZ6lNRDd[cLKEOG?d4@S5:1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1649978324
-8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/alu.sv
-FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/alu.sv
+w1652153402
+8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv
+FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv
 !i122 1
-L0 5 50
-Z4 OV;L;2020.1;71
+L0 1 7
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1649978424.000000
-!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/alu.sv|
+Z6 !s108 1652153568.000000
+!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/getRawImageData.sv|
 !i113 1
-Z5 o-sv -work work
-Z6 !s92 -sv -work work {+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution}
-Z7 tCvgOpt 0
-vtb_alu
-R1
-!s110 1649978423
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output}
+Z9 tCvgOpt 0
+nget@raw@image@data
+vrawImage_mem
+!s110 1652153566
 !i10b 1
-!s100 hgC>bZ5JJOJ5ZancV=U[;2
-R2
-ImbPJJQ@g1O3OSDfIL]I0o0
+!s100 :;[SXE]MJ>if=bM4fX?o]2
 R3
+I2nXKKO]L6K4bI;P6=CcLb0
+R4
+R0
+w1652153136
+8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v
+FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v
+!i122 0
+L0 40 61
+R5
+r1
+!s85 0
+31
+!s108 1652153566.000000
+!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/rawImage_mem.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output}
+R9
+nraw@image_mem
+vtb_getRawImageData
+R1
+R2
+!i10b 1
+!s100 3jbAnD>Wz55FlJUD^e]eU0
+R3
+IRUELaNWDTQhBzT[Z5fLRS1
+R4
 S1
 R0
-w1621620041
-8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/tb_alu.sv
-FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/tb_alu.sv
-!i122 0
-L0 1 33
-R4
+w1652153542
+8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv
+FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv
+!i122 2
+L0 4 37
+R5
 r1
 !s85 0
 31
-!s108 1649978423.000000
-!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/tb_alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Execution/tb_alu.sv|
-!i113 1
-R5
 R6
+!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_getRawImageData.sv|
+!i113 1
 R7
+R8
+R9
+ntb_get@raw@image@data
