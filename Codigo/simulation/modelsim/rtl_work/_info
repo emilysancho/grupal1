@@ -9,81 +9,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/simulation/modelsim
-vgetInstruction
+vfetch_mux
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1652329149
+Z2 !s110 1652336084
 !i10b 1
-!s100 ocE6fmPnH]HQ?N8ETOeCI3
+!s100 HMX<iJPOKZ=Qj:JVf`9Xg3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Io8l8GC=ja4WZ8V00AGCVV2
+Io4FmEY8HnSM^6LC7;SJ[H3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1652327748
-8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv
-FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv
-!i122 1
-L0 1 9
+w1652335806
+8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/fetch_mux.sv
+FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/fetch_mux.sv
+!i122 0
+L0 8 10
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1652329148.000000
-!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv|
+Z6 !s108 1652336084.000000
+!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/fetch_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/fetch_mux.sv|
 !i113 1
 Z7 o-sv -work work
 Z8 !s92 -sv -work work {+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch}
 Z9 tCvgOpt 0
-nget@instruction
-vinstruction_mem
-!s110 1652329148
+vtb_fetch_mux
+R1
+R2
 !i10b 1
-!s100 B=`>nT2`1Jc@ok:VH`l`V3
+!s100 obn=cCLN1N7[BfPYWm6Zd1
 R3
-I[lOk;NPENhEhM6Ce84KU>0
+I?;VTfE[c_zkMPXa]>OdDS0
 R4
+S1
 R0
-w1652326920
-8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v
-FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v
-!i122 0
-L0 40 61
+w1652336029
+8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_fetch_mux.sv
+FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_fetch_mux.sv
+!i122 1
+L0 2 36
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v|
-!i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work {+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch}
-R9
-vtb_getInstruction
-R1
-R2
-!i10b 1
-!s100 FI73P9VQ;7F<:5SYE99<_3
-R3
-IQ0iEmEMF1KIEE@hEY>h?N0
-R4
-S1
-R0
-w1652329130
-8C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv
-FC:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv
-!i122 2
-L0 4 39
-R5
-r1
-!s85 0
-31
-!s108 1652329149.000000
-!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv|
+!s107 C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_fetch_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch|C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_fetch_mux.sv|
 !i113 1
 R7
 R8
 R9
-ntb_get@instruction
