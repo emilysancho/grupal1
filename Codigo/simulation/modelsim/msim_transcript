@@ -10,47 +10,59 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv}
+# vlog -vlog01compat -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/Fetch {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:51:39 on May 09,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/setFinalImageData.sv 
-# -- Compiling module setFinalImageData
+# Start time: 22:19:08 on May 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v 
+# -- Compiling module instruction_mem
 # 
 # Top level modules:
-# 	setFinalImageData
-# End time: 22:51:39 on May 09,2022, Elapsed time: 0:00:00
+# 	instruction_mem
+# End time: 22:19:08 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/input-output {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv}
+# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/Fetch {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:51:39 on May 09,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/input-output/tb_setFinalImageData.sv 
-# -- Compiling module tb_setFinalImageData
+# Start time: 22:19:08 on May 11,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv 
+# -- Compiling module getInstruction
 # 
 # Top level modules:
-# 	tb_setFinalImageData
-# End time: 22:51:39 on May 09,2022, Elapsed time: 0:00:00
+# 	getInstruction
+# End time: 22:19:09 on May 11,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ACER/Desktop/Arqui\ IS\ 2022/ProyectoGrupal1/grupal1/Codigo/Fetch {C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:19:09 on May 11,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch" C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv 
+# -- Compiling module tb_getInstruction
+# 
+# Top level modules:
+# 	tb_getInstruction
+# End time: 22:19:09 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.tb_setFinalImageData
-# vsim work.tb_setFinalImageData 
-# Start time: 22:51:49 on May 09,2022
+vsim -gui -l msim_transcript work.tb_getInstruction -Lf altera_mf_ver
+# vsim -gui -l msim_transcript work.tb_getInstruction -Lf altera_mf_ver 
+# Start time: 22:19:21 on May 11,2022
 # Loading sv_std.std
-# Loading work.tb_setFinalImageData
-# Loading work.setFinalImageData
-vsim work.tb_setFinalImageData
-# End time: 22:51:53 on May 09,2022, Elapsed time: 0:00:04
-# Errors: 0, Warnings: 0
-# vsim work.tb_setFinalImageData 
-# Start time: 22:51:53 on May 09,2022
-# Loading sv_std.std
-# Loading work.tb_setFinalImageData
-# Loading work.setFinalImageData
+# Loading work.tb_getInstruction
+# Loading work.getInstruction
+# Loading work.instruction_mem
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (8) for port 'address'. The port definition is at: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_getInstruction/UUT File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/tb_getInstruction.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (18) for port 'address'. The port definition is at: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/instruction_mem.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_getInstruction/UUT/INSTR_MEM File: C:/Users/ACER/Desktop/Arqui IS 2022/ProyectoGrupal1/grupal1/Codigo/Fetch/getInstruction.sv Line: 8
 add wave -position insertpoint  \
-sim:/tb_setFinalImageData/clk \
-sim:/tb_setFinalImageData/we \
-sim:/tb_setFinalImageData/a \
-sim:/tb_setFinalImageData/wd
-run 20
-# setFinalImageData TB...
-# End time: 22:52:15 on May 09,2022, Elapsed time: 0:00:22
-# Errors: 0, Warnings: 0
+sim:/tb_getInstruction/address_width \
+sim:/tb_getInstruction/instruction_size \
+sim:/tb_getInstruction/a \
+sim:/tb_getInstruction/d \
+sim:/tb_getInstruction/clk
+run 15
+# getInstruction TB...
+# End time: 22:20:22 on May 11,2022, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2

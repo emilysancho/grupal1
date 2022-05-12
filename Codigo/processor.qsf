@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY tb_setFinalImageData
+set_global_assignment -name TOP_LEVEL_ENTITY tb_getInstruction
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:15:35  APRIL 14, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -63,6 +63,10 @@ set_global_assignment -name VERILOG_FILE "input-output/rawImage_mem.v"
 set_global_assignment -name SYSTEMVERILOG_FILE "input-output/getRawImageData.sv"
 set_global_assignment -name MIF_FILE "input-output/rawImage.mif"
 set_global_assignment -name SYSTEMVERILOG_FILE "input-output/tb_getRawImageData.sv"
+set_global_assignment -name VERILOG_FILE Fetch/instruction_mem.v
+set_global_assignment -name MIF_FILE Fetch/instruction_mem.mif
+set_global_assignment -name SYSTEMVERILOG_FILE Fetch/getInstruction.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Fetch/tb_getInstruction.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
